@@ -36,7 +36,6 @@ def main():
     else:  
         print(ans)
         
-
 def fizzbuzz(inp, num, word):
 
     if inp % num == 0:
