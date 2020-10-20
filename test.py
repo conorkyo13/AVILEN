@@ -18,7 +18,7 @@ def main():
         n_line = line.rstrip('\n')
         n_line = n_line.split(":")
         if len(n_line) == 2:
-            num = n_line[0]
+            num = int (n_line[0])
             word = n_line[1]
             a_dict[num] = word
         else:
@@ -28,7 +28,7 @@ def main():
 
     ans = ""
     for i in sorted(a_dict):
-        ans = ans + fizzbuzz(int (inp), int (i), a_dict[i])
+        ans = ans + fizzbuzz(int (inp), i, a_dict[i])
 
     if "" == ans:
         print(inp)
